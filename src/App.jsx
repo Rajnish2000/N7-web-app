@@ -7,6 +7,8 @@ import Hero from './components/Hero'
 import Solution from './components/Solution';
 import "@fontsource/archivo/500.css";
 import Core3 from './components/ui/Core3';
+import FintechLandingSection from './components/FintechLandingSection';
+import StripLayout from './components/StripLayout';
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
        <Hero/>
        <Solution/>
        <BankingSystem/>
+       <StripLayout/>
+       <FintechLandingSection/>
        <FintechInsightsSection/>
        <CaseStudiesSection/>
        <Core3 backGroundImage = "false" paddingX = "3" />

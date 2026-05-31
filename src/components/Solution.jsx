@@ -52,25 +52,27 @@ const Solution = () => {
   };
 
   return (
-    <section className="w-full bg-[#000D12] py-20 px-4 md:px-8">
-      <div className="max-w-8xl mx-auto flex flex-row justify-around text-archivo">
-        <div className="flex flex-col md:flex-col md:items-start gap-16 mb-16 pt-2">
-          <div className="flex">
-            <h2 className="text-[#E9F4F9] text-4xl font-normal md:text-4xl leading-tight max-w-2xl">
+    <section className="relative w-full bg-[#000D12] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="max-w-360 mx-auto flex flex-col lg:flex-row justify-between items-start gap-12 text-archivo">
+        <div className="flex flex-col gap-10 md:gap-14 lg:gap-16 w-full lg:w-[42%] mb-8 lg:mb-0 pt-2">
+          <div className="w-full">
+            <h2 className="text-[#E9F4F9] text-4xl font-normal leading-tight max-w-2xl">
               All of our solutions are tailor-made to your needs
             </h2>
           </div>
           <Button name="REQUEST DEMO" textColor="#E9F4F9" border="#E9F4F9" />
         </div>
-        <div className="w-99.5 h-99.5 rounded-full bg-[linear-gradient(to_right,#00B4FD,#003ACE)] opacity-10 blur-3xl absolute right-10 top-352"></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-4xl">
+
+        <div className="absolute -z-10 rounded-full bg-[linear-gradient(to_right,#00B4FD,#003ACE)] opacity-10 blur-3xl right-4 top-24 w-72 h-72 sm:right-6 sm:top-28 sm:w-80 sm:h-80 md:right-10 md:top-32 lg:top-40 lg:w-[28rem] lg:h-[28rem]"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 w-full lg:w-[56%]">
           {solutions.slice(0, 5).map((solution) => (
-            <div key={solution.id} className="px-8 backdrop-blur-sm">
-              <div className="mb-4 flex flex-row items-end justify-between">
+            <div key={solution.id} className="px-6 sm:px-8 py-8 backdrop-blur-sm">
+              <div className="mb-4 flex flex-row items-end justify-between gap-4">
                 {renderIcon(solution.icon)}
                 {solution.tag && (
-                <p className="text-[#A7B3BE] text-xs font-normal mb-4 tracking-widest">{solution.tag}</p>
-              )}
+                  <p className="text-[#A7B3BE] text-xs font-normal tracking-widest">{solution.tag}</p>
+                )}
               </div>
 
               <h3 className="text-[#E9F4F9] text-2xl font-light mb-6">

@@ -7,7 +7,7 @@ const Core3 = ({ paddingX ,backGroundImage}) => {
         style={{
           backgroundImage: `${backGroundImage === "true" ? `linear-gradient(to right, rgba(3,30,42,0.4), rgba(0,13,18,0.2)),url(${CB7})` : ''}`,
         }}
-        className="bg-local bg-right bg-no-repeat flex flex-row items-center justify-center gap-10 px-10 py-28 rounded-3xl"
+        className={`bg-local bg-right bg-no-repeat flex flex-row items-center justify-center gap-10 px-20 py-28 rounded-3xl`}
       >
         <div className="justify-start flex flex-col px-10 w-140 gap-5">
           <h2 className="text-archivo font-normal text-[#E9F4F9] text-4xl">
