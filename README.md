@@ -16,7 +16,7 @@ This project is a React application built with Vite.
 
 ## Live Demo
 
-- Live site: [https://your-live-url.example.com](https://n7-web-app.vercel.app/)
+- Live site: [live url](https://n7-web-app.vercel.app/)
 
 ## GitHub Repository
 
